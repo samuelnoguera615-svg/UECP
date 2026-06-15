@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" class="png" href="imagenbonita/logo2.png">
+    <title>U.E.C.P Nuestros Símbolos - Charallave</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="uecp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">U.E.C.P Nuestros Símbolos</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#niveles">Niveles</a></li>
+            <li><a href="#instalaciones">Plantel</a></li>
+            <li><a href="#inscripciones">Cupos</a></li>
+            <li class="dropdown">
+                <a href="#planificaciones" class="dropbtn">Planificaciones</a>
+                <div class="dropdown-content">
+                    <a href="#planificaciones">Planificaciones Curriculares</a>
+                    <a href="#registro">Registro de Notas</a>
+                </div>
+            </li>
+            <li><a href="#info">Himno</a></li>
+            <li class="dropdown">
+                <a href="#cede1" class="dropbtn">Cedes</a>
+                <div class="dropdown-content">
+                    <a href="#cede1">Cede 1</a>
+                    <a href="#cede2">Cede 2</a>
+                </div>
+            </li>
+            <li><a href="#login-contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <div class="header-content fade-in">
+            <h1>U.E.C.P Nuestros Símbolos</h1>
+            <p>Formadores de hombres capaces de guiar nuestra nación.</p>
+            <a href="#inscripciones" class="btn-main">Consultar Cupos</a>
+        </div>
+    </header>
+
+    <section id="destacados" class="bg-light scroll-anim">
+        <div class="section-title"><h2>Información Destacada</h2></div>
+        <div class="info-highlights">
+            <div class="highlight-card">
+                <h3>DOCENTES</h3>
+                <p>En todas las áreas de formación del Estudiante, contamos con un Equipo de Docentes transmisores exitosos de confianza, conocimientos y liderazgo al Estudiante.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>SALONES</h3>
+                <p>Salones de clase con interiores adecuados a las actividades de Aula: amplios, coloridos, bien iluminados, ventilados y con el mobiliario recomendado. Todo para apoyar los procesos creativos y formativos en el Estudiante.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>INSTALACIONES</h3>
+                <p>Instalaciones disponibles para el intercambio del Estudiante y el resto de toda la Comunidad Educativa. En estas zonas se favorece que el Estudiante ejerciten sus habilidades sociales y grupales.</p>
+            </div>
+            <div class="highlight-card">
+                <h3>EXCELENCIA</h3>
+                <p>Gracias a nuestra estructura organizativa y personal destacado disfrutamos de índices altos académicos y de prosecusión académica para nuestro Estudiantado. Somos garantía de un entorno de Calidad para el Estudio y Aprendizaje del Estudiante desde su ingreso hasta su graduación.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="niveles" class="scroll-anim">
+        <div class="section-title"><h2>Niveles Educativos</h2></div>
+        <div class="cards-container">
+            <div class="card">
+                <div class="img-placeholder"><i class="fas fa-child fa-3x"></i><br>Foto Preescolar</div>
+                <h3>Preescolar</h3>
+                <p>Iniciación pedagógica con amor y valores.</p>
+            </div>
+            <div class="card">
+                <div class="img-placeholder"><i class="fas fa-book-reader fa-3x"></i><br>Foto Primaria</div>
+                <h3>Primaria</h3>
+                <p>Excelencia académica en etapa básica.</p>
+            </div>
+            <div class="card">
+                <div class="img-placeholder"><i class="fas fa-graduation-cap fa-3x"></i><br>Foto Bachillerato</div>
+                <h3>Bachillerato</h3>
+                <p>Preparación integral para la universidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="instalaciones" class="bg-light scroll-anim">
+        <div class="section-title"><h2>Nuestro Plantel</h2></div>
+        <div class="gallery">
+            <div class="gallery-item"><span>Cancha Deportiva</span></div>
+            <div class="gallery-item"><span>Cantina Escolar</span></div>
+            <div class="gallery-item"><span>Proveeduría</span></div>
+            <div class="gallery-item"><span>Pasillos Centrales</span></div>
+            <div class="gallery-item"><span>Laboratorios</span></div>
+            <div class="gallery-item"><span>Laboratorio de fisica</span></div>
+            <div class="gallery-item"><span>Laboratorio de quimica</span></div>
+            <div class="gallery-item"><span>Laboratorio de biologia</span></div>
+            <div class="gallery-item"><span>Control de estudios</span></div>
+            <div class="gallery-item"><span>Biblioteca estudiantl</span></div>
+            <div class="gallery-item"><span>Sala de programacion </span></div>
+            <div class="gallery-item"><span>Sala de marketing</span></div>
+        </div>
+    </section>
+
+    <section id="docentes" class="scroll-anim">
+        <div class="section-title"><h2>Cuerpo Docente</h2></div>
+        <div class="tabs">
+            <button class="tab-btn active" data-nivel="bachillerato">Bachillerato</button>
+            <button class="tab-btn" data-nivel="primaria">Primaria</button>
+            <button class="tab-btn" data-nivel="preescolar">Preescolar</button>
+        </div>
+        <div id="docentes-grid" class="docentes-grid">
+            </div>
+    </section>
+
+    <section id="horarios" class="bg-light scroll-anim">
+        <div class="section-title"><h2>Horarios y Recesos</h2></div>
+        <div class="horarios-container">
+            <div class="horario-caja">
+                <h3><i class="fas fa-sun"></i> Turno Mañana</h3>
+                <p><strong>Entrada:</strong> 07:00 a.m.</p>
+                <p><strong>Receso 1:</strong> 8:00-8:30 a.m. /9:15 -9:45 a.m</p>
+                <p><strong>Receso 2:</strong> 12:00-12:25 p.m</p>
+                <p><strong>Salida:</strong> 12:00 p.m./1:45 p.m./2:30p.m. </p>
+            </div>
+            <div class="horario-caja">
+                <h3><i class="fas fa-cloud-sun"></i> Turno Tarde</h3>
+                <p><strong>Entrada:</strong> 12:25 p.m.</p>
+                <p><strong>Receso:</strong> 3:00 p.m.-3:15 p.m.</p>
+                <p><strong>Salida:</strong> 05:30-5:45 p.m.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscripciones" class="scroll-anim">
+        <div class="section-title"><h2>Proceso de Confirmación de Cupo</h2></div>
+        <div class="enroll-container">
+            <p>Para consultas y dudas sobre cupos, envíe un correo a <a href="mailto:uecpnuestrossimbolos@gmail.com">uecpnuestrossimbolos@gmail.com</a> o utilice el formulario abajo:</p>
+            <form id="form-preguntas" class="form-estilo">
+                <h3>Formulario de Preguntas</h3>
+                <p>Complete las siguientes preguntas y el contenido será incluido en el correo que se abrirá automáticamente.</p>
+                <input type="text" id="nombrePregunta" placeholder="¿Cuál es su nombre?" required>
+                <input type="email" id="emailPregunta" placeholder="¿Cuál es su correo electrónico?" required>
+                <textarea id="pregunta1" placeholder="¿Para qué grado solicita cupo?" required></textarea>
+                <textarea id="pregunta2" placeholder="¿Tiene algún comentario o necesidad especial? (opcional)"></textarea>
+                <textarea id="pregunta3" placeholder="¿Otra pregunta o información? (opcional)"></textarea>
+                <button type="submit">Enviar Preguntas</button>
+                <p id="mensaje-preguntas" class="mensaje"></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="info" class="bg-light identity-section scroll-anim">
+        <div class="section-title"><h2>Identidad Institucional</h2></div>
+        <div class="info-grid">
+            <div class="info-box">
+                <h3>Sobre Nosotros</h3>
+                <p>La <strong>Unidad Educativa Colegio Privado "Nuestros Símbolos"</strong> es una institución dedicada a la formación académica y humana en Charallave, Miranda.</p>
+                <p>Promovemos el respeto a los símbolos patrios y la <strong>Identidad Nacional</strong> en cada actividad educativa.</p>
+                <p>Nuestra misión es cultivar el respeto por los valores patrios y el desarrollo intelectual de nuestros estudiantes en todos sus niveles.</p>
+            </div>
+            <div class="info-box himno-container">
+                <h3>Himno del Colegio</h3>
+                <div class="himno-texto">
+                    <p class="coro"><strong>CORO</strong><br>
+                    Nuestros Símbolos es el nombre<br>
+                    que hoy ostenta nuestra institución,<br>
+                    formadores de hombres capaces<br>
+                    de guiar nuestra nación.</p>
+                    
+                    <p><strong>I</strong><br>
+                    En su sede nuestros niños<br>
+                    enarbolan con honor<br>
+                    orgullosos de su patria<br>
+                    el pabellón tricolor.</p>
+                    
+                    <p><strong>II</strong><br>
+                    El futuro de la patria<br>
+                    galopando siempre va<br>
+                    cual caballo indómito<br>
+                    reflejando libertad.</p>
+                    
+                    <p><strong>III</strong><br>
+                    Con un coro de voces unidas<br>
+                    entonamos con gran lealtad<br>
+                    el Gloria al Bravo Pueblo<br>
+                    nuestro Himno Nacional.</p>
+                    
+                    <p class="autor">Letra: <strong>Beliana Gomez</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="planificaciones" class="bg-light scroll-anim">
+        <div class="section-title"><h2>Planificaciones Curriculares</h2></div>
+        <p style="text-align: center; margin-bottom: 30px; color: var(--dark); opacity: 0.8;">Haga clic en el grado o año correspondiente para ver la planificación integrada (incluye todas las áreas y materias).</p>
+        <div class="plan-grid">
+            <div class="plan-group">
+                <h3>Preescolar</h3>
+                <ul id="plan-preescolar"></ul>
+            </div>
+            <div class="plan-group">
+                <h3>Primaria</h3>
+                <ul id="plan-primaria"></ul>
+            </div>
+            <div class="plan-group">
+                <h3>Bachillerato</h3>
+                <ul id="plan-bachillerato"></ul>
+            </div>
+        </div>
+        <div id="doc-viewer" class="doc-viewer hidden" oncontextmenu="return false;">
+            <div class="doc-viewer-controls">
+                <button class="close-view">Cerrar ×</button>
+            </div>
+            <iframe id="doc-iframe" src="" frameborder="0" oncontextmenu="return false;"></iframe>
+        </div>
+    </section>
+
+    <section id="registro" class="bg-light scroll-anim hidden">
+        <div class="section-title"><h2>Registro de Notas</h2></div>
+        <div class="registro-container">
+            <div id="login-section" class="login-section">
+                <h3>Registro de Notas</h3>
+                <div class="login-tabs">
+                    <button id="admin-tab" class="login-tab active">Administración</button>
+                    <button id="teacher-tab" class="login-tab">Docentes</button>
+                    <button id="student-tab" class="login-tab">Estudiantes</button>
+                </div>
+                <div id="admin-login" class="login-form">
+                    <input type="text" id="admin-user" placeholder="Usuario" required>
+                    <input type="password" id="admin-pass" placeholder="Contraseña" required>
+                    <button type="button" id="admin-login-btn">Ingresar</button>
+                </div>
+                <div id="teacher-login" class="login-form hidden">
+                    <input type="text" id="teacher-codigo" placeholder="Código de Docente" required>
+                    <button type="button" id="teacher-login-btn">Ingresar</button>
+                </div>
+                <div id="student-login" class="login-form hidden">
+                    <input type="text" id="student-section-code" placeholder="Código único del salón" required>
+                    <input type="text" id="student-student-code" placeholder="Código del estudiante o número de lista" required>
+                    <button type="button" id="student-login-btn">Consultar Mis Notas</button>
+                </div>
+                <p id="login-message"></p>
+            </div>
+            
+            <div id="registro-content" class="registro-content hidden">
+                <div id="admin-panel" class="admin-panel hidden">
+                    <h3>Panel de Control - Administración</h3>
+                    <div class="admin-controls">
+                        <button id="ver-secciones-btn"><i class="fas fa-folder"></i> Gestionar Secciones/Años</button>
+                        <button id="configurar-evaluaciones-btn"><i class="fas fa-cog"></i> Configurar Evaluaciones</button>
+                        <button id="gestionar-docentes-btn"><i class="fas fa-chalkboard-teacher"></i> Asignar Docentes</button>
+                        <button id="gestionar-estudiantes-btn"><i class="fas fa-user-graduate"></i> Lista de Estudiantes/Baneos</button>
+                        <button id="ver-historial-btn"><i class="fas fa-history"></i> Historial de Cambios</button>
+                        <button id="exportar-datos-btn"><i class="fas fa-download"></i> Exportar Resumen</button>
+                        <button id="logout-btn" class="btn-secondary">Cerrar Sesión</button>
+                    </div>
+                    <div id="admin-content" class="admin-content hidden"></div>
+                    <div id="export-output" class="export-output hidden"></div>
+                </div>
+                
+                <div id="teacher-panel" class="teacher-panel hidden">
+                    <h3>Panel del Docente</h3>
+                    <div class="teacher-info">
+                        <p id="teacher-welcome"></p>
+                    </div>
+                    <div class="teacher-controls">
+                        <button id="ver-mis-secciones-btn"><i class="fas fa-folder-open"></i> Mis Secciones Asignadas</button>
+                        <button id="logout-teacher-btn" class="btn-secondary">Cerrar Sesión</button>
+                    </div>
+                    <p class="teacher-access-note">Cada docente solo ve su materia dentro de las carpetas asignadas.</p>
+                    <div id="teacher-content" class="teacher-content hidden"></div>
+                </div>
+                
+                <div id="student-panel" class="student-panel hidden">
+                    <div class="student-header">
+                        <div>
+                            <h3>Mis Notas</h3>
+                            <p id="student-welcome"></p>
+                        </div>
+                        <button id="logout-student-btn" class="btn-secondary">Salir</button>
+                    </div>
+                    <div id="student-grades-container">
+                        <div id="student-section-info"></div>
+                        <div id="student-grades-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cede1" class="scroll-anim hidden">
+        <div class="section-title"><h2>Cede 1</h2></div>
+        
+        <section id="destacados-cede1" class="bg-light">
+            <div class="section-title"><h2>Información Destacada</h2></div>
+            <div class="info-highlights">
+                <div class="highlight-card">
+                    <h3>DOCENTES</h3>
+                    <p>En todas las áreas de formación del Estudiante, contamos con un Equipo de Docentes transmisores exitosos de confianza, conocimientos y liderazgo al Estudiante.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>SALONES</h3>
+                    <p>Salones de clase con interiores adecuados a las actividades de Aula: amplios, coloridos, bien iluminados, ventilados y con el mobiliario recomendado. Todo para apoyar los procesos creativos y formativos en el Estudiante.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>INSTALACIONES</h3>
+                    <p>Instalaciones disponibles para el intercambio del Estudiante y el resto de toda la Comunidad Educativa. En estas zonas se favorece que el Estudiante ejerciten sus habilidades sociales y grupales.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>EXCELENCIA</h3>
+                    <p>Gracias a nuestra estructura organizativa y personal destacado disfrutamos de índices altos académicos y de prosecusión académica para nuestro Estudiantado. Somos garantía de un entorno de Calidad para el Estudio y Aprendizaje del Estudiante desde su ingreso hasta su graduación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="niveles-cede1">
+            <div class="section-title"><h2>Niveles Educativos</h2></div>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="img-placeholder"><i class="fas fa-book-reader fa-3x"></i><br>Foto Primaria</div>
+                    <h3>Primaria</h3>
+                    <p>Excelencia académica en etapa básica.</p>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder"><i class="fas fa-graduation-cap fa-3x"></i><br>Foto Bachillerato</div>
+                    <h3>Bachillerato</h3>
+                    <p>Preparación integral para la universidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalaciones-cede1" class="bg-light">
+            <div class="section-title"><h2>Nuestro Plantel</h2></div>
+            <div class="gallery">
+                <div class="gallery-item"><span>Cancha Deportiva</span></div>
+                <div class="gallery-item"><span>Cantina Escolar</span></div>
+                <div class="gallery-item"><span>Proveeduría</span></div>
+                <div class="gallery-item"><span>Pasillos Centrales</span></div>
+                <div class="gallery-item"><span>Laboratorios</span></div>
+                <div class="gallery-item"><span>Laboratorio de fisica</span></div>
+                <div class="gallery-item"><span>Laboratorio de quimica</span></div>
+                <div class="gallery-item"><span>Laboratorio de biologia</span></div>
+                <div class="gallery-item"><span>Control de estudios</span></div>
+                <div class="gallery-item"><span>Biblioteca estudiantl</span></div>
+                <div class="gallery-item"><span>Sala de programacion </span></div>
+                <div class="gallery-item"><span>Sala de marketing</span></div>
+            </div>
+        </section>
+
+        <section id="docentes-cede1">
+            <div class="section-title"><h2>Cuerpo Docente</h2></div>
+            <div class="tabs">
+                <button class="tab-btn" data-nivel="bachillerato">Bachillerato</button>
+                <button class="tab-btn active" data-nivel="primaria">Primaria</button>
+            </div>
+            <div id="docentes-grid-cede1" class="docentes-grid">
+            </div>
+        </section>
+
+        <section id="horarios-cede1" class="bg-light">
+            <div class="section-title"><h2>Horarios y Recesos</h2></div>
+            <div class="horarios-container">
+                <div class="horario-caja">
+                    <h3><i class="fas fa-sun"></i> Turno Mañana</h3>
+                    <p><strong>Entrada:</strong> 07:00 a.m.</p>
+                    <p><strong>Receso 1:</strong> 8:00-8:30 a.m. /9:15 -9:45 a.m</p>
+                    <p><strong>Receso 2:</strong> 12:00-12:25 p.m</p>
+                    <p><strong>Salida:</strong> 12:00 p.m./1:45 p.m./2:30p.m. </p>
+                </div>
+                <div class="horario-caja">
+                    <h3><i class="fas fa-cloud-sun"></i> Turno Tarde</h3>
+                    <p><strong>Entrada:</strong> 12:25 p.m.</p>
+                    <p><strong>Receso:</strong> 3:00 p.m.-3:15 p.m.</p>
+                    <p><strong>Salida:</strong> 05:30-5:45 p.m.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscripciones-cede1">
+            <div class="section-title"><h2>Proceso de Confirmación de Cupo</h2></div>
+            <div class="enroll-container">
+                <p>Para consultas y dudas sobre cupos, envíe un correo a <a href="mailto:uecpnuestrossimbolos@gmail.com">uecpnuestrossimbolos@gmail.com</a> o utilice el formulario abajo:</p>
+                <form id="form-preguntas-cede1" class="form-estilo">
+                    <h3>Formulario de Preguntas</h3>
+                    <p>Complete las siguientes preguntas y el contenido será incluido en el correo que se abrirá automáticamente.</p>
+                    <input type="text" id="nombrePreguntaCede1" placeholder="¿Cuál es su nombre?" required>
+                    <input type="email" id="emailPreguntaCede1" placeholder="¿Cuál es su correo electrónico?" required>
+                    <textarea id="pregunta1Cede1" placeholder="¿Para qué grado solicita cupo?" required></textarea>
+                    <textarea id="pregunta2Cede1" placeholder="¿Tiene algún comentario o necesidad especial? (opcional)"></textarea>
+                    <textarea id="pregunta3Cede1" placeholder="¿Otra pregunta o información? (opcional)"></textarea>
+                    <button type="submit">Enviar Preguntas</button>
+                    <p id="mensaje-preguntas-cede1" class="mensaje"></p>
+                </form>
+            </div>
+        </section>
+    </section>
+
+    <section id="cede2" class="scroll-anim hidden">
+        <div class="section-title"><h2>Cede 2</h2></div>
+        
+        <section id="destacados-cede2" class="bg-light">
+            <div class="section-title"><h2>Información Destacada</h2></div>
+            <div class="info-highlights">
+                <div class="highlight-card">
+                    <h3>DOCENTES</h3>
+                    <p>En todas las áreas de formación del Estudiante, contamos con un Equipo de Docentes transmisores exitosos de confianza, conocimientos y liderazgo al Estudiante.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>SALONES</h3>
+                    <p>Salones de clase con interiores adecuados a las actividades de Aula: amplios, coloridos, bien iluminados, ventilados y con el mobiliario recomendado. Todo para apoyar los procesos creativos y formativos en el Estudiante.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>INSTALACIONES</h3>
+                    <p>Instalaciones disponibles para el intercambio del Estudiante y el resto de toda la Comunidad Educativa. En estas zonas se favorece que el Estudiante ejerciten sus habilidades sociales y grupales.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>EXCELENCIA</h3>
+                    <p>Gracias a nuestra estructura organizativa y personal destacado disfrutamos de índices altos académicos y de prosecución académica para nuestro Estudiantado. Somos garantía de un entorno de Calidad para el Estudio y Aprendizaje del Estudiante desde su ingreso hasta su graduación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="niveles-cede2">
+            <div class="section-title"><h2>Niveles Educativos</h2></div>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="img-placeholder"><i class="fas fa-child fa-3x"></i><br>Foto Preescolar</div>
+                    <h3>Preescolar</h3>
+                    <p>Iniciación pedagógica con amor y valores.</p>
+                </div>
+                <div class="card">
+                    <div class="img-placeholder"><i class="fas fa-book-reader fa-3x"></i><br>Foto Primaria</div>
+                    <h3>Primaria</h3>
+                    <p>Excelencia académica en etapa básica.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="instalaciones-cede2" class="bg-light">
+            <div class="section-title"><h2>Nuestro Plantel</h2></div>
+            <div class="gallery">
+                <div class="gallery-item"><span>Cancha Deportiva</span></div>
+                <div class="gallery-item"><span>Cantina Escolar</span></div>
+                <div class="gallery-item"><span>Proveeduría</span></div>
+                <div class="gallery-item"><span>Pasillos Centrales</span></div>
+                <div class="gallery-item"><span>Sala de audiovisual</span></div>
+                <div class="gallery-item"><span>Laboratorio de fisica</span></div>
+                <div class="gallery-item"><span>Laboratorio de quimica</span></div>
+                <div class="gallery-item"><span>Laboratorio de biologia</span></div>
+                <div class="gallery-item"><span>Control de estudios</span></div>
+                <div class="gallery-item"><span>Biblioteca estudiantl</span></div>
+                <div class="gallery-item"><span>Sala de programacion </span></div>
+                <div class="gallery-item"><span>Sala de marketing</span></div>
+            </div>
+        </section>
+
+        <section id="docentes-cede2">
+            <div class="section-title"><h2>Cuerpo Docente</h2></div>
+            <div class="tabs">
+                <button class="tab-btn active" data-nivel="preescolar">Preescolar</button>
+                <button class="tab-btn" data-nivel="primaria">Primaria</button>
+            </div>
+            <div id="docentes-grid-cede2" class="docentes-grid">
+            </div>
+        </section>
+
+        <section id="horarios-cede2" class="bg-light">
+            <div class="section-title"><h2>Horarios y Recesos</h2></div>
+            <div class="horarios-container">
+                <div class="horario-caja">
+                    <h3><i class="fas fa-sun"></i> Turno Mañana</h3>
+                    <p><strong>Entrada:</strong> 07:00 a.m.</p>
+                    <p><strong>Receso 1:</strong> 8:00-8:30 a.m. /9:15 -9:45 a.m</p>
+                    <p><strong>Receso 2:</strong> 11:30-11:50 a.m</p>
+                    <p><strong>Salida:</strong> 12:00 p.m.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscripciones-cede2">
+            <div class="section-title"><h2>Proceso de Confirmación de Cupo</h2></div>
+            <div class="enroll-container">
+                <p>Para consultas y dudas sobre cupos, envíe un correo a <a href="mailto:uecpnuestrossimbolos@gmail.com">uecpnuestrossimbolos@gmail.com</a> o utilice el formulario abajo:</p>
+                <form id="form-preguntas-cede2" class="form-estilo">
+                    <h3>Formulario de Preguntas</h3>
+                    <p>Complete las siguientes preguntas y el contenido será incluido en el correo que se abrirá automáticamente.</p>
+                    <input type="text" id="nombrePreguntaCede2" placeholder="¿Cuál es su nombre?" required>
+                    <input type="email" id="emailPreguntaCede2" placeholder="¿Cuál es su correo electrónico?" required>
+                    <textarea id="pregunta1Cede2" placeholder="¿Para qué grado solicita cupo?" required></textarea>
+                    <textarea id="pregunta2Cede2" placeholder="¿Tiene algún comentario o necesidad especial? (opcional)"></textarea>
+                    <textarea id="pregunta3Cede2" placeholder="¿Otra pregunta o información? (opcional)"></textarea>
+                    <button type="submit">Enviar Preguntas</button>
+                    <p id="mensaje-preguntas-cede2" class="mensaje"></p>
+                </form>
+            </div>
+        </section>
+    </section>
+             
+
+    <section id="login-contacto" class="scroll-anim">
+        <div class="section-title"><h2>Portal de Contacto</h2></div>
+        <div class="contact-grid">
+            <div class="login-box">
+                <h3>Política de Privacidad e Información de Contacto</h3>
+                <div style="max-height:420px; overflow:auto; text-align:left; font-size:0.95rem;">
+                    <p>En ciertas partes del sitio web, podemos pedirle que nos indique datos personales para que podamos proporcionarle la información y atención que solicite. Usted no está obligado a suministrarnos dichos datos, pero sin ellos es posible que no podamos brindarle la información que necesite. Al registrar sus datos en los formularios de registro y/o contáctanos, usted acepta que UEP "NUESTROS SÍMBOLOS" le suministre los servicios disponibles en esta plataforma. Cada vez que usted suministre tales datos personales, trataremos esa información según esta cláusula de privacidad:</p>
+                    <p>En términos generales, cualquier información suministrada a UEP "NUESTROS SÍMBOLOS" será utilizada sólo dentro de las diferentes entidades que conforman a la institución. Nunca se le entregará a nadie fuera del CEI sin antes obtener su consentimiento, a no ser que nos obligue alguna orden judicial o administrativa emanada de un organismo competente.</p>
+                    <p>Asimismo, las normas de seguridad de los datos conservados son conformes a la Ley Sobre Mensajes de Datos y Firmas Electrónicas de la República Bolivariana de Venezuela y cualquier otra legislación venezolana aplicable.</p>
+                    <p>Nosotros podremos requerir de usted su nombre, apellido, dirección de correo electrónico (e-mail), y demás información regular de su empresa o negocio. Nuestro propósito es recolectar esta información personal y/o empresarial para tomar en cuenta sus comentarios o sugerencias, así como para poder ponernos en contacto con usted para notificarle de nuestros servicios, y para mantenerlo al tanto de las actividades de UEP "NUESTROS SÍMBOLOS".</p>
+                    <p>La información que publique en o a través de nuestras redes sociales (Facebook, Instagram, etc) es información disponible públicamente y generalmente es accesible y puede ser recogido y utilizado por otros. Por favor, no divulgue ninguna información personal que no desea compartir, ya que la institución no posee ningún control sobre cómo otros usuarios de estar redes pueden utilizar posteriormente su información. No seremos responsables de las publicaciones que su persona realice con información personal en dichas plataformas.</p>
+                </div>
+            </div>
+            
+            <div class="form-box">
+                <h3>Ubicación y Datos</h3>
+                <div class="info-contacto-texto">
+                    <p><strong><i class="fas fa-map-marker-alt"></i> DIRECCIÓN:</strong><br>
+                    Final Calle El Placer Edificio Nuestros Simbolos Única Sede. Derivacion Avenida 2 Bolivar. CHARALLAVE. ESTADO MIRANDA.</p>
+                    <p><strong><i class="fas fa-clock"></i> HORARIO DE ATENCIÓN:</strong><br >
+                    8:00 a.m a 5:00 p.m</p>
+                    <p><strong><i class="fas fa-phone"></i> TELÉFONOS:</strong><br>
+                    0239-248.55.30 - 246.03.49</p>
+                    <p><strong><i class="fab fa-whatsapp"></i> WHATSAPP:</strong><br>
+                    0412-612.28.90</p>
+                    <p><strong><i class="fab fa-instagram"></i> INSTAGRAM:</strong><br>
+                    @uepnuestrossimbolos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://instagram.com/uepnuestrossimbolos" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/584126122890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:uepnuestrossimbolos@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>U.E.C.P Nuestros Símbolos - Charallave, Edo. Miranda</p>
+        <p style="font-size: 0.7rem; opacity: 0.6; margin-top: 10px;">&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="app-toast" class="app-toast"></div>
+    <script src="api.js"></script>
+    <script src="uecp.js"></script>
+</body>
+</html>
